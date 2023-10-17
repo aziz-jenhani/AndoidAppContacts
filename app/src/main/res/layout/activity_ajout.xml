@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth"
+    android:orientation="vertical"
+    android:padding="32px"
+    tools:context=".Ajout">
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/pub_style"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:text="Ajouter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Nom"
+            android:textColor="@color/violet"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/idNom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Saisir Nom"
+            android:textColor="#8E8787"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Prenom"
+            android:textColor="@color/violet"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/idPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Saisir Prenom"
+            android:textColor="#8E8787"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Numero"
+            android:textColor="@color/violet"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/idNumero"
+            android:layout_width="match_parent"
+            android:layout_height="55sp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Saisir Numero"
+            android:textColor="#8E8787" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:backgroundTint="#FBF9FF"
+            android:text="@string/cancel"
+            android:textColor="@color/violet" />
+
+        <Button
+            android:id="@+id/btnValid"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_weight="1"
+            android:backgroundTint="#FBF9FF"
+            android:text="@string/valide"
+            android:textColor="@color/violet" />
+    </LinearLayout>
+
+</LinearLayout>
